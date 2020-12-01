@@ -5,7 +5,7 @@ import Form from "./components/Form";
 const App = () => {
   return (
     <>
-      <h1>NHK番組表検索</h1>
+      <h1>ＮＨＫ総合１番組表検索</h1>
       <Form />
       <List />
     </>

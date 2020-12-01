@@ -3,7 +3,6 @@ import { connect } from "react-redux";
 
 class List extends Component {
   render() {
-    console.log(this.props.dataUrls);
     const { dataUrls } = this.props;
     const title = !!dataUrls.length
       ? dataUrls.map((item) => (

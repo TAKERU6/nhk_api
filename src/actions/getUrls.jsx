@@ -7,9 +7,9 @@ const receiveData = (data) => {
   };
 };
 
-const getUrls = (word, data) => {
+const getUrls = (dataArea, dataDate, dataGenre) => {
   return (dispatch) => {
-    nhkAPI(word, data).then((res) => {
+    nhkAPI(dataArea, dataDate, dataGenre).then((res) => {
       const data = res.data.list.g1;
       dispatch(receiveData(data));
     });

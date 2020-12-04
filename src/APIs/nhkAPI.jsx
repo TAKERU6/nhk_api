@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const countriesAPI = (dataArea, dataDate, dataGenre) => {
+const nhkAPI = (dataArea, dataDate, dataGenre) => {
   const area = dataArea;
   const service = "g1";
   const genre = dataGenre;
@@ -10,4 +10,4 @@ const countriesAPI = (dataArea, dataDate, dataGenre) => {
   return axios.get(url);
 };
 
-export default countriesAPI;
+export default nhkAPI;
